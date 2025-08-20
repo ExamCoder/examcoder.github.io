@@ -1,0 +1,3 @@
+for C++ codes use : https://examcoder.github.io/helpcpp.txt
+for Data Structures in c use : https://examcoder.github.io/helpds.txt
+for C Codes : https://examcoder.github.io/helpc.txt
