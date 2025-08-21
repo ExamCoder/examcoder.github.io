@@ -1,0 +1,48 @@
+#include <iostream.h>
+#include <stdio.h>
+#include <conio.h>
+
+class Armstrong
+{
+    int n, rem, t, arm;
+
+public:
+    void accept();
+    void display();
+};
+
+void Armstrong::accept()
+{
+    cout << "Enter Value : ";
+    cin >> n;
+    t = n;
+    arm = 0;
+}
+
+void Armstrong::display()
+{
+    while (n > 0)
+    {
+        rem = n % 10;
+        arm = (rem * rem * rem) + arm;
+        n = n / 10;
+    }
+
+    if (t == arm)
+    {
+        cout << t << " is an armstrong number";
+    }
+    else
+    {
+        cout << t << "is not an armstrong number";
+    }
+}
+
+int main()
+{
+    Armstrong S;
+    S.accept();
+    S.display();
+    getch();
+    return 0;
+}
